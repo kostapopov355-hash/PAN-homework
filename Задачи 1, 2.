@@ -1,0 +1,34 @@
+#include <iostream>
+
+float add(float po, int V, int S, int C2) {
+return po*V*V*S*C2/2;
+}
+
+int main() {
+    int po;
+    int V;
+    int S;
+    float C;
+    float C2;
+    float L;
+    std::cout << "Введите po: ";
+    std::cin >> po;
+    std::cout << "Введите V: ";
+    std::cin >> V;
+    std::cout << "Введите S: ";    
+    std::cin >> S;
+    std::cout << "Введите C: ";    
+    std::cin >> C;
+    std::cout << "Введите C2: ";    
+    std::cin >> C2;
+
+    L = po*V*V*S*C/2;
+    std::cout << "Подъёмная сила: "<< L << std::endl;
+
+
+    float result = add(po, V, C2, S); // Вызов функции
+    std::cout << "Аэродинамическое сопротивление: " << result;
+
+    
+    return 0;
+}
