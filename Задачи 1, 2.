@@ -5,7 +5,7 @@ return po*V*V*S*C2/2;
 }
 
 int main() {
-int po;
+    int po;
     int V;
     int S;
     float C;
